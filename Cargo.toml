@@ -1,15 +1,13 @@
 [package]
-name = "uefi-rs-hello"
-version = "0.1.0"
 authors = ["Nerry <108566+neri@users.noreply.github.com>"]
 edition = "2018"
+name = "uefi-rs-hello"
+version = "0.1.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-uefi = { git = "https://github.com/rust-osdev/uefi-rs.git" }
-#compiler_builtins = { git = "https://github.com/rust-lang/compiler-builtins" }
-rlibc = "1.0.0"
+uefi = {git = "https://github.com/rust-osdev/uefi-rs.git"}
 
 [profile.release]
 opt-level = "z"

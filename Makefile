@@ -14,7 +14,7 @@ clean:
 	-rm -rf target
 
 $(TARGET): src/**
-	cargo build -Zbuild-std=core --target $(RUST_ARCH) --release
+	cargo build -Zbuild-std --target $(RUST_ARCH) --release
 
 $(EFI_BOOT):
 	mkdir -p $(EFI_BOOT)
